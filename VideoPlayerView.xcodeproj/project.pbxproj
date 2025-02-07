@@ -13,7 +13,9 @@
 		02F2A9892D54DF9700854261 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F2A9882D54DF9700854261 /* Preview Assets.xcassets */; };
 		02F2A9902D54DFEE00854261 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2A98F2D54DFEE00854261 /* VideoPlayerViewModel.swift */; };
 		02F2A9932D54E77E00854261 /* Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F2A9922D54E77E00854261 /* Testing.swift */; };
-		02F2A9952D54E8D700854261 /* myvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 02F2A9942D54E8D700854261 /* myvideo.mp4 */; };
+		425C62422D55DB3F00B7CF9A /* myvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 425C62412D55DB3F00B7CF9A /* myvideo.mp4 */; };
+		425C62452D55DEEB00B7CF9A /* myvideo.srt in Resources */ = {isa = PBXBuildFile; fileRef = 425C62442D55DEE200B7CF9A /* myvideo.srt */; };
+		425C62472D55E60200B7CF9A /* myvideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 425C62462D55E60200B7CF9A /* myvideo2.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,9 @@
 		02F2A9882D54DF9700854261 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02F2A98F2D54DFEE00854261 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		02F2A9922D54E77E00854261 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
-		02F2A9942D54E8D700854261 /* myvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myvideo.mp4; sourceTree = "<group>"; };
+		425C62412D55DB3F00B7CF9A /* myvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myvideo.mp4; sourceTree = "<group>"; };
+		425C62442D55DEE200B7CF9A /* myvideo.srt */ = {isa = PBXFileReference; lastKnownFileType = text; path = myvideo.srt; sourceTree = "<group>"; };
+		425C62462D55E60200B7CF9A /* myvideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myvideo2.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 		02F2A9802D54DF8E00854261 /* VideoPlayerView */ = {
 			isa = PBXGroup;
 			children = (
-				02F2A9942D54E8D700854261 /* myvideo.mp4 */,
+				425C62412D55DB3F00B7CF9A /* myvideo.mp4 */,
+				425C62442D55DEE200B7CF9A /* myvideo.srt */,
+				425C62462D55E60200B7CF9A /* myvideo2.mp4 */,
 				02F2A9812D54DF8E00854261 /* VideoPlayerViewApp.swift */,
 				02F2A9832D54DF8E00854261 /* VideoPlayerView.swift */,
 				02F2A9852D54DF9700854261 /* Assets.xcassets */,
@@ -104,7 +110,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					02F2A97D2D54DF8E00854261 = {
 						CreatedOnToolsVersion = 14.2;
@@ -134,9 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425C62472D55E60200B7CF9A /* myvideo2.mp4 in Resources */,
 				02F2A9892D54DF9700854261 /* Preview Assets.xcassets in Resources */,
-				02F2A9952D54E8D700854261 /* myvideo.mp4 in Resources */,
+				425C62422D55DB3F00B7CF9A /* myvideo.mp4 in Resources */,
 				02F2A9862D54DF9700854261 /* Assets.xcassets in Resources */,
+				425C62452D55DEEB00B7CF9A /* myvideo.srt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +169,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -193,6 +202,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -221,6 +231,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -253,6 +264,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -287,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
